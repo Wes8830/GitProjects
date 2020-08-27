@@ -1,0 +1,85 @@
+"""LEARNing NOTES"""
+
+***Conditions***
+    == will test for equality
+    = one equal sign will assign a variable.
+
+***Import Libraries***
+
+
+1) List
+  Notes:
+  1) declare with square brackets []
+    grocery = ['apples', 'chicken', 'hummus', 'lettuce']
+  2) Order stays the same
+
+  3) find object by referencing the INDEX of an item : grocery[3] returns 4th item lettuce
+2) Dictionary
+  1) list of definitions corresponding to unique terms
+  2) declare with curly braces {}
+  3) Unordered
+  4) Keys and Values make up an entry called a 'key-value pair'
+  5) grocery = {
+        'apples': 5, # a key-value pair
+        'lettuce': 1,
+        'chicken': 1
+        'hummus' : 1
+      }
+  6) use KEY to return how many, say, apples you want.
+      grocery['apples']
+      output > 5
+  7) change values by refereing to the KEY and setting it = new VALUE
+      grocery['apples'] = 9
+  8) add a new KEY is a simple as:
+      grocery['salami'] = 1/4lbs
+
+
+    ***Combine Lists and Dictionaries***
+    recipes = {
+    'curry': [
+        'Chicken',
+        'curry seasoning',
+        'rice',
+        'Yogurt',
+    ],
+    'Breakfast': [
+        'Eggs',
+        'Bacon',
+        'english muffins'
+        'Orange Juice']
+    }
+
+    input  recipes ['curry']
+    output
+        [
+        'Eggs',
+        'Bacon',
+        'english muffins'
+        'Orange Juice']
+
+    **To get the nth value from 'curry' recipe**
+    input recipes['curry'][2]
+    output 'english muffins'
+
+    **Check Type of object**
+    type(recipes)
+    Dictionary
+
+    type(recipes['Breakfast'])
+    List
+
+  9) Methods of Dictionaries
+    .keys() and .values()
+
+    input grocery.keys()
+    output ['apples','chicken','lettuce','hummus']
+
+    input type(recipes.keys())
+    output list
+
+    input recipes.values()
+    output [5,1,1,1]
+
+
+3) Series
+4) DataFrame
